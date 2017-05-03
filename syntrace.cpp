@@ -1,5 +1,7 @@
-// syntrace.cpp : Defines the entry point for the console application.
-//
+// syntrace.cpp : Synthetic Trace Generation
+// Algorithm based on:
+// D.Thiebaut, J.L.Wolf, and H.S.Stone, "Synthetic Traces for Trace-Driven Simulation of Cache Memories",
+// IEEE Trans. on Computers, vol. 41, 4, April 1992, pp. 388-410
 
 #include "stdafx.h"
 
@@ -35,9 +37,9 @@ int main()
 	sptr access_node;
 	int i, j;
 	float p1, p2;
-	float theta = 2.27f;  // locality parameter
-	float A = 15.41f;     // size of ave. neighbourhood
-	int Nt = 1000;        // length of trace
+	float theta = 3.07f; // 3.07f;  // locality parameter
+	float A = 19.33f; // 19.33f;     // size of ave. neighbourhood
+	int Nt = 2000;        // length of trace
 	int index;            // hit index
 	int access_addr;
 	double u;
